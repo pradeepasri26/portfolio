@@ -8,10 +8,6 @@ body, html {
     width: 100%;
 }
 
-.about::before {
-    opacity: 5%;
-}
-
 /* Background Image for full screen */
 body {
     background-image: url('src/bg.jpg'); /* Replace 'src/bg.jpg' with your actual image path */
