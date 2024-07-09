@@ -1,0 +1,239 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.about::before {
+    opacity: 5%;
+}
+
+/* Background Image for full screen */
+body {
+    background-image: url('src/bg.jpg'); /* Replace 'src/bg.jpg' with your actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* Adjust this value based on the height of the navbar */
+    margin: auto; /* Center the container */
+    width: 100%;
+}
+
+/* Navbar Component Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+/* Section Styles */
+section {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Maximum width of the container */
+    width: 80%; /* Width adjustment */
+    padding: 20px;
+    margin: 80px 0 20px; /* Margin to push content below the navbar */
+    text-align: left;
+    color: white;
+}
+
+section:first-of-type {
+    margin-top: 100px; /* Additional margin for the first section to push it below the navbar */
+}
+
+/* Home Component Styles */
+.home {
+    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    
+}
+
+.home h1 {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.home h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* About Component Styles */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    text-align: left; /* Align list text to the left */
+}
+
+.about li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.about li::marker {
+    color: white;
+}
+
+/* Contact Component Styles */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+/* Projects Component Styles */
+.projects {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+
+.projects h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.project {
+    margin-bottom: 20px;
+    text-align: left; /* Align project text to the left */
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Skills Component Styles */
+.skills {
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    text-align: left; /* Align list text to the left */
+}
+
+.skills li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
